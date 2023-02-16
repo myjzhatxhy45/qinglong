@@ -1,6 +1,6 @@
 export default {
   siteName: '青龙控制面板',
-  apiPrefix: '/api/',
+  apiPrefix: location.href.match('ql') ? '/ql/api/' : '/api/',
   authKey: 'token',
 
   /* Layout configuration, specify which layout to use for route. */

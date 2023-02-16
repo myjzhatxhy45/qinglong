@@ -3,6 +3,8 @@ const CompressionPlugin = require('compression-webpack-plugin');
 
 export default defineConfig({
   hash: true,
+  history: {type:'hash'},
+  // base:'./',
   antd: {},
   outputPath: 'static/dist',
   fastRefresh: true,
